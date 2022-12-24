@@ -169,9 +169,17 @@ margin-bottom: 0;
         display: flex;
         align-items: center;
         justify-content: center;
+        margin: 0 !important;
+        padding: 0 !important;
     }
     .downLoad.p-4{
+        margin: 0 !important;
+        padding: 0 !important;
         width: 80%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
     }
     .popup::before {
         display: none;
@@ -191,7 +199,7 @@ align-items: center;
 }
 .GB.d-flex.justify-content-between {
     padding: 0 !important;
-}
+width: 100%;}
 .attribution {
     margin-top: 60px;
 }
