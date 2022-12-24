@@ -15,7 +15,9 @@ body {
     height: 100vh;
     background-image: url(../images/bg-desktop.png);
     background-repeat: no-repeat;
-    background-position-y: bottom -40% !important;
+    background-position-y: bottom; 
+     background-position-y: 129%; 
+     background-position-x: 0px; ;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -46,14 +48,21 @@ body {
     width: 15px ;
 }
 
-.downLoad {
+.download-container {
     width: 500px;
-    height: 140px;
-    background-color: var(--Dark-Blue);
+    height: 170px;
     align-self: end;
     margin-left: 30px;
+    display: flex;
+}
+.downLoad.p-4{
+    background-color: var(--Dark-Blue);
+    height: 140px;
+    align-self: flex-end;
     border-radius: 10px;
     position: relative;
+
+
 }
 .downLoad p {
     color: var(--Grayish-Blue);
@@ -130,7 +139,14 @@ margin-bottom: 0;
 }
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color:hsl(335, 100%, 65%);}
-
+@media (max-width:900px){
+    body {
+        background-image: url(../images/bg-desktop.png);
+        background-image: cover;
+        background-position-y: 80%;
+        width: 100% ;
+    }
+}
 @media (max-width:750px) {
     body {
         background-image: url(../images/bg-mobile.png);
@@ -146,24 +162,22 @@ margin-bottom: 0;
         justify-content: center;
         margin: 0;
     }
-    .downLoad.p-4 
+    .download-container
     {
-        width: 300px;
+        width: 100%;
         margin: 0;
-        padding: 30px 0 0 20px !important;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
-    .downLoad.p-4 p {
-        margin: 0;
-        padding: 0 0 20px;
+    .downLoad.p-4{
+        width: 80%;
     }
     .popup::before {
         display: none;
     } 
 
-    .download-container
-    {
-        margin-top: 20px;
-    }
+  
     .div.d-flex.justify-content-center.align-items-center {
         width: 80%;
     }
@@ -182,7 +196,12 @@ align-items: center;
     margin-top: 60px;
 }
 .popup.d-flex.justify-content-center.align-items-end p {
-    margin: 0;
+    margin: 0 0 0 20px;
     padding: 0;
+}
+
+.fylo {
+    background-color: var(--Dark-Blue);
+    width: 80%;
 }
 }
